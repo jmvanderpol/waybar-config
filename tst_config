@@ -1,0 +1,42 @@
+// ### Minimal - Long ### //
+
+{
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 6,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+	"sway/workspaces",
+	"sway/mode",
+	"sway/scratchpad"
+	],
+"modules-center": [
+	"sway/window",
+	"clock",
+	"idle_inhibitor"
+	],
+"modules-right": [
+	"cpu",
+	"power-profiles-daemon",
+	"memory",
+	"temperature",
+	"custom/separator#blank_2": {
+	  "format": "  ",
+	  "interval": "once",
+	  "tooltip": false
+	},
+	"pulseaudio",
+	"pulseaudio#microphone",
+	"custom/separator#blank_2",
+	"tray"
+	],
+
+}
